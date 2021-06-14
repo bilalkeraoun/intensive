@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/bilalkeraoun/intensive#readme",
   "dependencies": {
-    "parcel-bundler": "^1.12.5"
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-purgecss": "^3.0.0"
   },
   "devDependencies": {
     "sass": "^1.34.1"
