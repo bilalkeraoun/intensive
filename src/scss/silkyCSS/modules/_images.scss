@@ -1,0 +1,41 @@
+// ./silkyCSS/modules/_images.scss
+
+// ------------------------------------------------
+// MODULE VARIABLES
+// ------------------------------------------------
+// IMAGES
+$img-display:         block;
+$img-margin-bottom:   1rem;
+$img-principal-width: 100%;
+$img-galerie-width:   100%;
+$img-gap:             1rem;
+
+// TEXT FLOAT
+$textFloat-line-height: 2.7rem;
+$textFloat-font-size:   1.2rem;
+
+// ------------------------------------------------
+// MODULE SPECIFICATIONS
+// ------------------------------------------------
+p.text-floating {
+  line-height: $textFloat-line-height;
+  font-size:   $textFloat-font-size;
+}
+img {
+  display: $img-display;
+  &.image-principal {
+    margin-bottom: $img-margin-bottom;
+    width:         $img-principal-width;
+  }
+
+  &.galerie-img {
+    width: $img-galerie-width;
+  }
+}
+
+.catalogue-image {
+  gap: $img-gap;
+  &.none {
+    border: none;
+  }
+}

@@ -1,0 +1,68 @@
+// ./silkyCSS/modules/_paginations.scss
+
+// ------------------------------------------------
+// MODULE SPECIFICATIONS
+// ------------------------------------------------
+// PAGINATIONS
+$paginations-cursor:         default;
+$paginations-align:          center;
+$paginations-marginTop:      3rem;
+$paginations-display:        flex;
+$paginations-JustifyContent: center;
+    // a
+    $paginations-a-padding:        .5rem .7rem;;
+    $paginations-a-color:          $color-5;
+    $paginations-a-border:         1px solid #eee;
+    $paginations-a-font:           $font-2;
+    $paginations-a-textDecoration: none;
+    $paginations-a-size:           .8rem;
+        // hover
+        $paginations-a-hover-borderColor: $color-1;
+        $paginations-a-hover-color:       $color-1;
+    // .active
+    $paginations-active-background: #eee;
+    // .page-suite
+    $paginations-pageSuite-color: #eee;
+    // .page-next
+    $paginations-pageNext-padding: .5rem 2rem;
+        // .page-next icones
+        $paginations-i-marginLeft: 1rem;
+        $paginations-i-size:       .7rem;
+
+
+// ------------------------------------------------
+// MODULE SPECIFICATIONS
+// ------------------------------------------------
+.paginations {
+    cursor:          $paginations-cursor;
+    text-align:      $paginations-align;
+    margin-top:      $paginations-marginTop;
+    display:         $paginations-display;
+    justify-content: $paginations-JustifyContent;
+    a {
+        padding:         $paginations-a-padding;
+        color:           $paginations-a-color;
+        border:          $paginations-a-border;
+        font-family:     $paginations-a-font;
+        text-decoration: $paginations-a-textDecoration;
+        font-size:       $paginations-a-size;
+        &:hover {
+            border-color: $paginations-a-hover-borderColor;
+            color:        $paginations-a-hover-color;
+        }
+    }
+    .active {
+        background:  $paginations-active-background;
+    }
+    .page-suite {
+        color: $paginations-pageSuite-color;
+    }
+    .page-next {
+        padding: $paginations-pageNext-padding;
+        i {
+            margin-left: $paginations-i-marginLeft;
+            font-size:   $paginations-i-size;
+        }
+    }
+
+}

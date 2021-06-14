@@ -1,0 +1,372 @@
+// ./silkyCSS/modules/_typos.scss
+// CHARGEMENT DES FONTS
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');  // MERRYWHEATHER
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');                              // SOURCE SANS PRO
+
+// ------------------------------------------------
+// MODULE VARIABLES
+// ------------------------------------------------
+
+// ||| FONTS VARIABLES |||||||||| 
+// PARAGRAPHES
+$font-1:                 'Merriweather', 'Georgia', serif;
+$default-color-font:     $color-5;
+$default-size-font :     100%;
+$default-weight-font:    300;
+$default-line-height:    1.65;
+$default-letter-spacing: 0.025rem;
+$default-text-align:     justify;
+// TITLES H1 --> H6
+    // H1
+    $font-2:            'Source Sans Pro',sans-serif;
+    $h1-color-font:     $color-5;
+    $h1-size-font :     4rem;
+    $h1-weight-font:    300;
+    $h1-line-height:    1.2;
+    $h1-margin:         0 0 .7em 0;
+    $h1-letter-spacing: 0.075rem;
+    // H2
+    $font-2:            'Source Sans Pro', sans-serif;
+    $h2-color-font:     $color-5;
+    $h2-size-font :     1.75rem;
+    $h2-weight-font:    300;
+    $h2-line-height:    1.2;
+    $h2-margin:         0 0 .7em 0;
+    $h2-letter-spacing: 0.025rem;
+    // H3
+    $font-2:            'Source Sans Pro', sans-serif;
+    $h3-color-font:      $color-5;
+    $h3-size-font :      1.25rem;
+    $h3-weight-font:     300;
+    $h3-line-height:     1.2;
+    $h3-margin:          0 0 .7em 0;
+    $h3-letter-spacing:  0.025rem;
+    // H4
+    $font-2:           'Source Sans Pro', sans-serif;
+    $h4-color-font:     $color-5;
+    $h4-size-font :     1rem;
+    $h4-weight-font:    300;
+    $h4-line-height:    1.1;
+    $h4-margin:         0 0 .7em 0;
+    $h4-letter-spacing: 0.025rem;
+    // H5
+    $font-2:            'Source Sans Pro', sans-serif;
+    $h5-color-font:     $color-5;
+    $h5-size-font :     .9rem;
+    $h5-weight-font:    300;
+    $h5-line-height:    1.2;
+    $h5-margin:         0 0 .7em 0;
+    $h5-letter-spacing: 0.025rem;
+    // H6
+    $font-2:            'Source Sans Pro', sans-serif;
+    $h6-color-font:     $color-5;
+    $h6-size-font :     .8rem;
+    $h6-weight-font:    300;
+    $h6-line-height:    1.2;
+    $h6-margin:         0 0 .7em 0;
+    $h6-letter-spacing: 0.025rem;
+
+// LINKS
+$link-color:       $color-5;
+$link-decoration:  underline dotted;
+$link-transition:  all 300ms ease-in-out;
+    // LINKS : HOVER
+    $link-hover-color:      $color-1;
+    $link-hover-decoration: none;
+    
+// CODE
+$code-color:       $color-5;
+$code-background:  $color-2;
+$code-padding:     .3em;
+$code-border:       $color-2 1px solid;
+
+// HR
+$hr-height: 2px;
+$hr-color:  #e7e7e7;
+$hr-margin: 3rem 0;
+
+// BLOCKQUOTE
+$blockquote-color-font:  $color-5;
+$blockquote-style:       italic;
+$blockquote-border:      #e7e7e7 4px solid;
+$blockquote-margin :     0 0 2rem 0;
+$blockquote-padding :    .5rem 0 .5rem 2rem;
+
+// HEADING WITH SUBSTITLE
+    // SUBSTITLE 1
+    $substitle-font-1:   $font-1;
+    $substitle-size-1:   1rem;
+    $substitle-style-1:  italic;
+    $substitle-margin-1: 0 0 2rem 0;
+    // SUBSTITLE 2
+    $substitle-font-2:   $font-1;
+    $substitle-size-2:   .9rem;
+    $substitle-style-2:  italic;
+    $substitle-margin-2: 0 0 2rem 0;
+    // SUBSTITLE 3
+    $substitle-font-3:   $font-1;
+    $substitle-size-3:   .8rem;
+    $substitle-style-3:  italic;
+    $substitle-margin-3: 0 0 2rem 0;
+    
+// DESCRIPTION : DL > DT > DD
+    // DL
+    $dl-margin: 0 0 2rem 0;
+    // DT
+    $dt-display:     block;
+    $dt-font-weight: 600;
+    $dt-margin:      0 0 1rem 0;
+    // DD
+    $dd-margin-left: 2rem;
+   
+// TABLEAU
+    // TABLE
+    $table-layout:           auto;
+    $table-border-collapse:  collapse;
+    $table-margin:           0 0 5rem 0;
+    $table-width:            100%;
+    // THEAD
+    $thead-font:            $font-2;
+    $thead-align:           left;
+    $thead-text-transform:  uppercase;
+    $thead-border-bottom:   2px solid #e7e7e7;
+    $thead-color-font:      $color-5;
+    $thead-size:            .8rem;
+    $thead-letter-spacing:  0.075em;
+    $thead-line-height:     1.5;         
+        //TH
+        $th-padding:        .7em;     
+    // TBODY
+        $tbody-font :          $font-1;
+        $tbody-align:         left;
+        $tbody-color-font:     $color-5;
+        $tbody-size:           1em;
+        $tbody-line-height:    1.65;
+        $tbody-letter-spacing: 0.025em;
+            // TR
+            $tr-border-bottom: 1px solid #e7e7e7;
+            $tr-background-even: #fff;
+            $tr-background-odd: $color-2;
+                // TD
+                $tbody-td-padding: .7em .7em .7em .5em;
+    // TFOOT
+        // TR
+            // TD
+            $tfoot-td-padding:   0.7rem;
+            $tfoot-td-font-size: .9rem;
+
+// BOX 
+$box-border:      2px solid #e7e7e7;
+$box-padding:     1rem;
+$box-line-height: 2.6rem;
+
+
+// ------------------------------------------------
+// MODULE SPECIFICATIONS
+// ------------------------------------------------ 
+// BODY, ELEMENT PAR DEFAUT
+body, .default {
+    font-family:  $font-1;
+    color:        $default-color-font;
+    font-size:    $default-size-font;
+    font-weight:  $default-weight-font;
+    line-height:  $default-line-height;
+    text-align:   $default-text-align;
+}  
+    
+// LINK
+a, .link {
+    color:           $link-color;
+    text-decoration: $link-decoration;
+    transition:      $link-transition;
+    &:hover {
+        color:           $link-hover-color;
+        text-decoration: $link-hover-decoration;
+    }
+}
+      
+// HR
+hr, .hr {
+    height: $hr-height;
+    background: $hr-color;
+    border: none;
+    margin: $hr-margin;
+}
+
+// BLOCKQUOTE
+blockquote, .blockquote {
+    border-left: $blockquote-border;
+    font-style: $blockquote-style;
+    margin: $blockquote-margin;
+    padding: $blockquote-padding;
+}
+
+// CODE
+code, .code {  
+    color:      $code-color;
+    background: $code-background;
+    padding:    $code-padding;
+    border:     $code-border;
+}
+
+// SUBTITLE
+.subtitle-italic-1 {
+    font-family: $substitle-font-1;
+    font-size:   $substitle-size-1;
+    font-style:  $substitle-style-1;
+    margin:      $substitle-margin-1;
+}
+.subtitle-italic-2 {
+    font-family: $substitle-font-2;
+    font-size:   $substitle-size-2;
+    font-style:  $substitle-style-2;
+    margin:      $substitle-margin-2;
+}
+.subtitle-italic-3 {
+    font-family: $substitle-font-3;
+    font-size:   $substitle-size-3;
+    font-style:  $substitle-style-3;
+    margin:      $substitle-margin-3;
+}
+        
+// DESCRIPTION : DL DT DD
+// DL
+    dl, .dl {
+        margin: $dl-margin;
+    }
+// DT
+    dt, .dt {
+        display:     $dt-display;
+        font-weight: $dt-font-weight;
+        margin:      $dt-margin;
+    
+    }
+// DD
+    dd, .dd {
+        margin-left: $dd-margin-left;
+        line-height: 2.5rem;
+    }
+
+// TABLEAUX
+table {
+    width:           $table-width;
+    border-collapse: $table-border-collapse;
+    margin:          $table-margin;
+}
+thead{
+    font-family:    $thead-font;
+    font-size:      $thead-size;
+    color:          $thead-color-font;
+    letter-spacing: $thead-letter-spacing;
+    line-height:    $thead-line-height;
+    text-transform: $thead-text-transform;
+    border-bottom:  $thead-border-bottom;
+     th {
+        padding:        $th-padding;
+    }
+}
+tbody {
+    font-family:    $tbody-font;
+    color:          $tbody-color-font;    
+    font-size:      $tbody-size;           
+    line-height:    $tbody-line-height;   
+    letter-spacing: $tbody-letter-spacing;
+    &.table-alternate {
+        tr:nth-of-type(even) {
+             background: $tr-background-even;
+        }
+        tr:nth-of-type(odd) {
+             background:  $tr-background-odd;
+        }
+    }
+   tr {
+       border-bottom: $tr-border-bottom;
+       
+        td {
+            padding: $tbody-td-padding;
+        }
+   }
+}
+tfoot {
+    tr {
+        td {
+           padding:   $tfoot-td-padding;
+           font-size: $tfoot-td-font-size;
+        }
+    }
+}
+      
+// BOX
+.box {
+    border:      $box-border;
+    padding:     $box-padding;
+    line-height: $box-line-height;
+   
+}
+// PRE
+pre code {
+    display: block;
+    line-height: 1.5rem;
+    padding: 1rem 1.5rem;
+    overflow-x: auto;
+    white-space: pre-line;
+    text-align: left;
+    border: 2px solid #eeeeee;
+    color: #727272;
+}
+          
+// H1 ----> H6
+h1, .h1 {
+    font-family:    $font-2;
+    color:          $h1-color-font;
+    font-size:      $h1-size-font;
+    font-weight:    $h1-weight-font;
+    line-height:    $h1-line-height;
+    margin:         $h1-margin;        
+    letter-spacing: $h1-letter-spacing;
+}
+h2, .h2 {
+    font-family:    $font-2;
+    color:          $h2-color-font;
+    font-size:      $h2-size-font;
+    font-weight:    $h2-weight-font;
+    line-height:    $h2-line-height;
+    margin:         $h2-margin;        
+    letter-spacing: $h2-letter-spacing
+}
+h3, .h3 {
+    font-family:    $font-2;
+    color:          $h3-color-font;
+    font-size:      $h3-size-font;
+    font-weight:    $h3-weight-font;
+    line-height:    $h3-line-height;
+    margin:         $h3-margin;        
+    letter-spacing: $h3-letter-spacing
+}
+h4, .h4 {
+    font-family:    $font-2;
+    color:          $h4-color-font;
+    font-size:      $h4-size-font;
+    font-weight:    $h4-weight-font;
+    line-height:    $h4-line-height;
+    margin:         $h4-margin;        
+    letter-spacing: $h4-letter-spacing
+}
+h5, .h5 {
+    font-family:    $font-2;
+    color:          $h5-color-font;
+    font-size:      $h5-size-font;
+    font-weight:    $h5-weight-font;
+    line-height:    $h5-line-height;
+    margin:         $h5-margin;        
+    letter-spacing: $h5-letter-spacing
+}
+h6, .h6 {
+    font-family:    $font-2;
+    color:          $h6-color-font;
+    font-size:      $h6-size-font;
+    font-weight:    $h6-weight-font;
+    line-height:    $h6-line-height;
+    margin:         $h6-margin;        
+    letter-spacing: $h6-letter-spacing
+}

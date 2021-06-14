@@ -1,0 +1,44 @@
+// ./silkyCSS/modules/_lists.scss
+
+// ------------------------------------------------
+// MODULE VARIABLES
+// ------------------------------------------------
+$list-font:        $font-1;
+$list-color-font:  $color-5;
+$list-size-font:   100%;
+$list-padding:     1rem;
+$list-line-height: 2.5rem;
+
+// ------------------------------------------------
+// MODULE SPECIFICATIONS
+// ------------------------------------------------
+ul {
+  font-family:  $list-font;
+  color:        $list-color-font;
+  font-size:    $list-size-font;
+  padding-left: $list-padding;
+  line-height:  $list-line-height;
+  &.list-alternate {
+    li:nth-of-type(odd) {
+    }
+    li:nth-of-type(even) {
+    }
+  }
+  &.list-none {
+    list-style-type: none;
+  }
+}
+
+ol {
+  font-family:  $list-font;
+  color:        $list-color-font;
+  font-size:    $list-size-font;
+  padding-left: $list-padding;
+  line-height:  $list-line-height;
+  &.list-alternate {
+    li:nth-of-type(odd) {
+    }
+    li:nth-of-type(even) {
+    }
+  }
+}

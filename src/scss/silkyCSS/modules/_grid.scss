@@ -1,0 +1,43 @@
+// ./silkyCSS/modules/_grid.scss
+
+// -------------------------------------------------------
+// MODULE VARIABLE
+// -------------------------------------------------------
+
+// -------------------------------------------------------
+// MODULE DEFAULT SPECIFICATION
+// -------------------------------------------------------
+
+// GRID
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 0rem 0rem;
+  * {
+    grid-column: span 12;
+    grid-row: span 1;
+  }
+}
+
+@each $label, $breakpoint, $containerWidth in $gridValues {
+  @media screen and (min-width:#{$breakpoint}) {
+    .container {
+      width: #{$containerWidth};
+      margin: 0 auto;
+      padding: 0 0;
+    }
+    @for $i from 1 through 12 {
+      .col#{$label}-#{$i} {
+        grid-column: span + " " + #{$i};
+      }
+      .row#{$label}-#{$i} {
+        grid-row: span + " " + #{$i};
+      }
+      @for $j from 0 through 11 {
+        .offset#{$label}-#{$j}.col#{$label}-#{$i} {
+          grid-column: #{$j + 1} / span + " " + #{$i};
+        }
+      }
+    }
+  }
+}

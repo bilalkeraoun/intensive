@@ -1,0 +1,122 @@
+// ./silkyCSS/modules/_mainFooter.scss
+
+// ------------------------------------------------
+// MODULE VARIABLES
+// ------------------------------------------------ 
+// FOOTER
+$footer-background-color:  #f2f2f2;
+
+// CONTAINER LEFT
+$footer-containerLeft-width: 100%;
+  // FOOTER FORM
+  $footer-form-padding: 3em;
+    // footer form label
+    $footer-input-size:  0.7em;
+    $footer-input-font:  $font-2;
+    $footer-input-color: $color-3; 
+    // footer form input
+    $footer-input-height:     3rem;
+    $footer-input-width:      100%;
+    $footer-input-margin:     0 0 1.3rem 0;
+    $footer-input-padding:    1rem;
+    $footer-input-border:     1.5px solid #d5d5d5;
+    $footer-input-background: #f2f2f2;
+    // footer form textarea
+     $footer-textarea-width:      100%;
+     $footer-textarea-margin:     1em 0 2em 0;
+     $footer-textarea-border:     1.5px solid #d5d5d5;
+     $footer-textarea-background: #f2f2f2;
+      // footer form focus
+      $footer-form-focus-outline: none;
+      $footer-form-focus-border:  1px solid $color-1;
+
+// CONTAINER RIGHT
+$footer-containerRight-width:      100%;
+$footer-containerRight-borderLeft: 1px solid #d5d5d5;
+  // FOOTER RIGHT
+  $footerRight-padding:      3em;
+  $footerRight-height:       25%;
+  $footerRight-borderBottom: 1px solid #d5d5d5;
+  $footerRight-borderTop:    1px solid #d5d5d5;
+  $footerRight-borderNone:   none;
+    // footer-right title
+    $footerRight-title-display:      inline-block;
+    $footerRight-title-marginRight:  3em;
+    $footerRight-title-color:        $color-3;
+    $footerRight-title-textTansform: uppercase;
+    $footerRight-title-size:         0.7em;
+    // footer-right conte
+    $footerRight-content-display: inline-block;
+    $footerRight-content-color:   #8b8b8b;
+    $footerRight-content-size:    .7rem;
+  
+
+// ------------------------------------------------
+// MODULE SPECIFICATIONS
+// ------------------------------------------------ 
+.footer {
+  background: $footer-background-color;
+  .container-left {
+    width:  $footer-containerLeft-width;
+    .form {    
+      padding: $footer-form-padding;
+      label {  
+        font-size:   0.7em;
+        font-family: $font-2;
+        color:       $color-3;
+      }
+      &.input-footer {
+        height:     $footer-input-height;
+        width:      $footer-input-width;
+        margin:     $footer-input-margin;
+        padding:    $footer-input-padding;
+        border:     $footer-input-border;
+        background: $footer-input-background;  
+        &:focus {
+           outline: $footer-form-focus-outline;
+           border:  $footer-form-focus-border;
+        }
+      }
+      &.input-msg { 
+        width:      $footer-textarea-width;
+        margin:     $footer-textarea-margin;
+        border:     $footer-textarea-border;
+        background: $footer-textarea-background;
+        &:focus {
+          outline: $footer-form-focus-outline;
+          border:  $footer-form-focus-border;
+        }
+      }
+    }
+  } 
+  // CONTAINER RIGHT
+  .container-right {
+    width:       $footer-containerRight-width;
+    border-left: $footer-containerRight-borderLeft;
+    .footer {
+      padding:       $footerRight-padding;
+      height:        $footerRight-height;
+      border-bottom: $footerRight-borderBottom;
+      border-top:    $footerRight-borderTop;
+      &.footer-title {
+        display:        $footerRight-title-display;
+        margin-right:   $footerRight-title-marginRight;
+        border-bottom:  $footerRight-borderNone;
+        border-top:     $footerRight-borderNone;
+        color:          $footerRight-title-color;
+        text-transform: $footerRight-title-textTansform;
+        font-size:      $footerRight-title-size;
+      }
+      &.footer-content {
+        display:        $footerRight-content-display;
+        color:          $footerRight-content-color;
+        font-size:      $footerRight-content-size;
+        border-bottom:  $footerRight-borderNone;
+        border-top:     $footerRight-borderNone;
+      }
+      .container-icones {
+          display:  $footerRight-content-display;
+      }
+    }
+  }
+}

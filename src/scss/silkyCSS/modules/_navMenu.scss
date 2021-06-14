@@ -1,0 +1,360 @@
+// ./silkyCSS/modules/_navMenu.scss
+// ------------------------------------------------
+// MODULE VARIABLE
+// ------------------------------------------------
+// NAV 
+// ||||||| MENU HORIZONTAL ||||||||||||
+$mHoriz-width:      100%;
+$mHoriz-background: #27333f;
+  // MH UL
+  $mHoriz-ul-listStyle: none;
+  $mHoriz-ul-padding:   0;
+  $mHoriz-ul-margin:    0;
+  // MH A
+  $mHoriz-a-display:        block;
+  $mHoriz-a-padding:        1em;
+  $mHoriz-a-font:           $font-2;
+  $mHoriz-a-fontSize:       .7rem;
+  $mHoriz-a-color:          #fff;
+  $mHoriz-a-textDecoration: none;
+  $mHoriz-a-letterSpacing:  0.075em;
+    // MH A:hover
+    $mHoriz-aHover-color:      $color-1;
+    $mHoriz-aHover-background: lighten($color-5, 10%);
+    // MH A:active
+    $mHoriz-aActive-color:      $color-5;
+    $mHoriz-aActive-background: #fff;;
+      // MH A:hover
+      $mHoriz-aActive-color:      $color-1;
+  
+  // MH LIST-ICONS
+  // PAR DEFAUT
+  $mHoriz-listIcons-display:        flex;
+  $mHoriz-listIcons-justifyContent: right;
+  $mHoriz-listIcons-margin:         -.1rem;
+  $mHoriz-listIcons-paddingLeft:    8rem;
+    // UL
+    $mH-listIcons-ul-display:        flex;
+    $mH-listIcons-ul-flexwrap:       nowrap;
+    $mH-listIcons-ul-JustifyContent: flex-end;
+    $mH-listIcons-ul-listStyle:      none;
+    $mH-listIcons-ul-padding:        0;
+    $mH-listIcons-ul-margin:         0;
+    $mH-listIcons-ul-height:         0;
+    $mH-listIcons-ul-position:       relative;
+    $mH-listIcons-ul-bottom:         3rem;
+    $mH-listIcons-ul-background:     #27333f;
+      // LI
+      $mH-listIcons-li-textAlign: center;
+        // A
+        $mH-listIcons-a-display:        block;
+        $mH-listIcons-a-textDecoration: none;
+        $mH-listIcons-a-padding:        1px 0px;
+        $mH-listIcons-a-color:          #fff;
+        $mH-listIcons-a-size:           .8rem;
+        $mH-listIcons-a-background:     #27333f;
+          // A:hover
+          $mH-listIcons-aHover-color: $color-1;
+
+  // ANNULATION DES EFFETS DU MENU SLIDER
+  // BOUTON BURGER SLIDER CANCEL
+  $sliderCancel-btn-display: none;
+  // LIST MENU SLIDER CANCEL
+  $menu-sliderCancel-position:   static;
+  $menu-sliderCancel-background: none;
+  $menu-sliderCancel-width:      auto;
+  $menu-sliderCancel-height:     auto;
+    // A MENU SLIDER CANCEL
+    $a-sliderCancel-margin:       auto;
+    $a-sliderCancel-borderBottom: none;
+    $a-sliderCancel-color:        #fff;
+      // A:active MENU SLIDER CANCEL
+      $aActive-sliderCancel-color: $color-5;
+         // A:hover MENU SLIDER CANCEL
+         $aHover-sliderCancel-color: $color-1;
+    // iconCross MENU SLIDER CANCEL
+    $iconCross-sliderCancel-display: none;
+
+  // MH PREMIER NIVEAU
+  // UL
+  $mHoriz-ulFirst-display:        flex;
+  $mHoriz-ulFirst-justifyContent: flex-start;
+
+ 
+// ||||||| MENU SLIDER ||||||||||||
+// VALEUR PAR DEFAUT
+// UL
+$mSlider-ul-listStyle: none;
+$mSlider-ul-padding:   0;
+$mSlider-ul-margin:    0;
+  // A
+  $mSlider-a-textDecoration: none;
+  $mSlider-a-font:           $font-2;
+  $mSlider-a-size:           .76rem;
+  $mSlider-a-letterSpacing:  0.075em;
+    // A:hover
+    $mSlider-aHover-color: $color-1;
+// ICONES CLOSE CROSS 
+$mSlider-iconCross-textAlign: right;
+$mSlider-iconCross-padding:   1rem;
+  // I 
+  $mSlider-i-IconCross-transition: all 300ms ease-in-out;
+    // I:hover
+    $mSlider-iHover-IconCross-color: $color-1;
+
+// BOUTON HAMBURGER
+// A
+$btnBurger-a-font:           $font-2;
+$btnBurger-a-textDecoration: none;
+  // I
+  $btnBurger-i-paddingRight: .5rem;
+
+// MENU SLIDER BTN
+$btn-position: fixed;
+$btn-top:      0;
+$btn-right:    2rem;
+$btn-display:  block;
+$btn-color:    #fff;
+$btn-padding:  1em;
+  // BTN:hover
+  $btnHover-color: $color-1;
+
+// LIST MENU-SLIDER
+$mSlider-listMenu-position:   fixed;
+$mSlider-listMenu-top:        0;
+$mSlider-listMenu-right:      -250px;
+$mSlider-listMenu-background: rgb(250, 250, 250);
+$mSlider-listMenu-width:      250px;
+$mSlider-listMenu-height:     100vh;
+$mSlider-listMenu-transition: right 300ms ease-in-out;
+  // A
+  $mSlider-a-listMenu-display:      block;
+  $mSlider-a-listMenu-color:        $color-5;
+  $mSlider-a-listMenu-margin:       1rem 2rem;
+  $mSlider-a-listMenu-textAlign:    left;
+  $mSlider-a-listMenu-borderBottom: 2px solid #eee;
+     // A:hover
+    $mSlider-aHover-listMenu-color: $color-1;
+  
+// LIST ICONS MENU-SLIDER 
+$mSlider-listicons-display:        flex;
+$mSlider-listicons-justifyContent: center;
+  // LI
+    // A
+    $mSlider-a-listicons-margin:       1rem -.5rem;
+    $mSlider-a-listicons-padding:      0;
+    $mSlider-a-listicons-borderBottom: none;
+
+// .VISIBLE FOR JS
+$mSlider-visible-right: 0;
+
+// ||||||||||||||| MEDIA QUERIES ||||||||||||||||||
+// MENU SLIDER 
+$mSlider-visible-display: none;
+
+// MENU HORIZONTAL
+$menuHoriz-visible-display: none;
+
+
+// ------------------------------------------------
+// MODULE SPECIFICATIONS
+// ------------------------------------------------
+
+// |||||||| MENU HORIZONTAL ||||||||||||
+.menu-horizontal {
+  // VALEURS PAR DEFAUT
+  width:      $mHoriz-width;
+  background: $mHoriz-background;
+  ul {
+    list-style: $mHoriz-ul-listStyle;
+    padding:    $mHoriz-ul-padding;
+    margin:     $mHoriz-ul-margin;
+  }   
+  a {
+    display:         $mHoriz-a-display;
+    padding:         $mHoriz-a-padding;
+    font-family:     $mHoriz-a-font;
+    font-size:       $mHoriz-a-fontSize;
+    color:           $mHoriz-a-color;
+    text-decoration: $mHoriz-a-textDecoration;
+    letter-spacing:  $mHoriz-a-letterSpacing;   
+    &:hover {
+     color:      $mHoriz-aHover-color;
+     background: $mHoriz-aHover-background;
+    }
+    &.active {
+      color:      $mHoriz-aActive-color;
+      background: $mHoriz-aActive-background;
+      &:hover {
+        color:  $mHoriz-aActive-color;
+      }
+    }
+  }
+  .list-icons {
+    display:         $mHoriz-listIcons-display;
+    justify-content: $mHoriz-listIcons-justifyContent;
+    margin:          $mHoriz-listIcons-margin;
+    padding-left:    $mHoriz-listIcons-paddingLeft;
+  }
+  // ANNULATION DES EFFETS DU MENU SLIDER
+  .menu-slider-btn {
+    display: $sliderCancel-btn-display;
+  }
+  .menu-slider-menu {
+    position:   $menu-sliderCancel-position;
+    background: $menu-sliderCancel-background;
+    width:      $menu-sliderCancel-width;
+    height:     $menu-sliderCancel-height;
+    a {
+      margin:        $a-sliderCancel-margin;
+      border-bottom: $a-sliderCancel-borderBottom;
+      color:         $a-sliderCancel-color;
+      &.active {
+        color:       $aActive-sliderCancel-color;
+        &:hover {
+          color: $aHover-sliderCancel-color;
+        }
+      }
+    }
+    .menu-slider-cross {
+      display: $iconCross-sliderCancel-display;
+    }
+  }
+  // PREMIER NIVEAU
+  > ul {
+    display:         $mHoriz-ulFirst-display;
+    justify-content: $mHoriz-ulFirst-justifyContent;
+   > li {
+     
+    > a {
+    }
+   } 
+  }
+  // LIST ICONS
+  & ul.list-icons {
+    display:          $mH-listIcons-ul-display;
+    flex-wrap:        $mH-listIcons-ul-flexwrap;
+    justify-content:  $mH-listIcons-ul-JustifyContent;
+    list-style:       $mH-listIcons-ul-listStyle;
+    padding:          $mH-listIcons-ul-padding;
+    margin:           $mH-listIcons-ul-margin;
+    height:           $mH-listIcons-ul-height;
+    position:         $mH-listIcons-ul-position;
+    bottom:           $mH-listIcons-ul-bottom;
+    background-color: $mH-listIcons-ul-background;
+    li {
+      text-align: $mH-listIcons-li-textAlign;
+      a {
+        display:          $mH-listIcons-a-display;
+        text-decoration:  $mH-listIcons-a-textDecoration;
+        padding:          $mH-listIcons-a-padding;
+        color:            $mH-listIcons-a-color;
+        font-size:        $mH-listIcons-a-size;
+        background-color: $mH-listIcons-a-background;
+        &:hover {
+          color: $mH-listIcons-aHover-color;
+        }
+      }
+    }
+  }
+}
+
+
+// ||||||||||| MENU SLIDER ||||||||||||||||
+.menu-slider {
+// VALEURS PAR DEFAUT
+ul {
+  list-style: $mSlider-ul-listStyle;
+  padding:    $mSlider-ul-padding;
+  margin:     $mSlider-ul-margin;
+
+  a {
+    text-decoration: $mSlider-a-textDecoration;
+    font-family:     $mSlider-a-font;
+    font-size:       $mSlider-a-size;
+    letter-spacing:  $mSlider-a-letterSpacing;
+    &:hover {
+     color: $mSlider-aHover-color;
+    }
+  }
+}
+&-cross {
+  text-align: $mSlider-iconCross-textAlign;
+  padding:    $mSlider-iconCross-padding;
+  i {
+    transition: $mSlider-i-IconCross-transition;
+    &:hover {
+      color: $mSlider-iHover-IconCross-color;
+    }
+  }
+}
+// BOUTON HAMBERGER
+a {
+ font-family:     $btnBurger-a-font;
+ text-decoration: $btnBurger-a-textDecoration;
+ 
+ > i {
+   padding-right: $btnBurger-i-paddingRight;
+ }
+}
+// BTN
+&-btn {
+  position: $btn-position;
+  top:      $btn-top;
+  right:    $btn-right;
+  display:  $btn-display;
+  color:    $btn-color;
+  padding:  $btn-padding;
+  &:hover {
+    color: $btnHover-color;
+  }
+}
+// LIST MENU
+&-menu {
+  position:   $mSlider-listMenu-position;
+  top:        $mSlider-listMenu-top;
+  right:      $mSlider-listMenu-right;
+  background: $mSlider-listMenu-background;
+  width:      $mSlider-listMenu-width;
+  height:     $mSlider-listMenu-height; 
+  transition: $mSlider-listMenu-transition;
+   a {
+    display:       $mSlider-a-listMenu-display;
+    color:         $mSlider-a-listMenu-color;
+    margin:        $mSlider-a-listMenu-margin;
+    text-align:    $mSlider-a-listMenu-textAlign;
+    border-bottom: $mSlider-a-listMenu-borderBottom;
+    &:hover {
+      color: $mSlider-aHover-listMenu-color;
+    }
+  }
+  .list-icons {
+    display:        $mSlider-listicons-display;
+    justify-content: $mSlider-listicons-justifyContent;
+    li {   
+       a {
+        margin:        $mSlider-a-listicons-margin;
+        padding:       $mSlider-a-listicons-padding;
+        border-bottom: $mSlider-a-listicons-borderBottom;
+       }
+    }
+  }
+  &.visible {
+    right: $mSlider-visible-right;
+  }
+
+}
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-slider {
+    display: $mSlider-visible-display;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .menu-horizontal {
+    display: $menuHoriz-visible-display;  
+  }
+}
+

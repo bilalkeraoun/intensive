@@ -1,0 +1,143 @@
+// ./silkyCSS/modules/_buttons.scss
+
+// ------------------------------------------------
+// MODULE VARIABLES
+// ------------------------------------------------
+// BUTTON
+    $btn-display-block: inline-block;
+    $btn-font:          $font-2;
+    $btn-margin:        0.7rem 0.7rem;
+    // HOVER
+        $button-color-hover: $color-1;
+
+// DARK
+    $button-dark-background: $color-5;
+    $button-dark-color:      #fff;
+    // HOVER
+        $btn-dark-hover-background: $color-1;
+// LIGHT
+    $button-light-background: #fff;
+    $button-light-color:      $color-5;
+    $button-border-color:     2px solid $color-5;
+    // HOVER
+        $btn-light-hover-border-color: $color-1;
+
+// BTN PRIMARY
+    $btn-primary-size:   0.9rem;
+    $btn-primary-width:  7rem;
+    $btn-primary-height: 3rem;
+// BTN DEFAULT
+    $btn-default-size: 0.9rem;
+    // DISABLED
+        $btn-opacity-disabled: 0.25;
+
+// BTN LARGE
+    $btn-large-size:   1rem;
+    $btn-large-width:  7.7rem;
+    $btn-large-height: 3.3rem;
+
+// BTN SMALL
+    $btn-small-size:   0.7rem;
+    $btn-small-width:  4.6rem;
+    $btn-small-height: 2.3rem;
+
+// BTN FIT
+    $btn-fit-size:   0.9rem;
+    $btn-fit-width:  95%;
+    $btn-fit-height: 3rem;
+
+// BTN FITSMALL
+    $btn-fitsmall-size:   0.9rem;
+    $btn-fitsmall-width:  95%;
+    $btn-fitsmall-height: 2rem;
+
+// BTN ICON
+    $btn-icon-size:          0.9rem;
+    $btn-icon-width:         7rem;
+    $btn-icon-height:        3rem;
+    $btn-icon-padding:       0.7rem 0.7rem;
+    $btn-icon-padding-right: 1rem;
+
+// ------------------------------------------------
+// MODULE SPECIFICATIONS
+// ------------------------------------------------
+button,
+.button {
+  display:     inline-block;
+  margin:      $btn-margin;
+  transition:  $link-transition;
+  font-family: $btn-font;
+  & i {
+    padding: $btn-icon-padding;
+  }
+  &.button-primary {
+    font-size: $btn-primary-size;
+    width:     $btn-primary-width;
+    height:    $btn-primary-height;
+    &:disabled {
+      opacity: $btn-opacity-disabled;
+      &:hover {
+        background-color: $button-dark-background;
+        border:           $color-5;
+      }
+    }
+  }
+  &.button-default {
+    font-size: $btn-default-size;
+    width:     $btn-primary-width;
+    height:    $btn-primary-height;
+
+    &:disabled {
+      opacity: $btn-opacity-disabled;
+      &:hover {
+        border-color: $color-5;
+        color:        $color-5;
+      }
+    }
+  }
+
+  &.button-large {
+    font-size: $btn-large-size;
+    width:     $btn-large-width;
+    height:    $btn-large-height;
+  }
+  &.button-small {
+    font-size: $btn-small-size;
+    width:     $btn-small-width;
+    height:    $btn-small-height;
+  }
+  &.button-fit {
+    font-size: $btn-fit-size;
+    width:     $btn-fit-width;
+    height:    $btn-fit-height;
+  }
+  &.button-fitsmall {
+    font-size: $btn-fitsmall-size;
+    width:     $btn-fitsmall-width;
+    height:    $btn-fitsmall-height;
+  }
+  &.button-icon {
+    font-size:     $btn-icon-size;
+    width:         $btn-icon-width;
+    height:        $btn-icon-height;
+    padding-right: $btn-icon-padding-right;
+  }
+  &.dark {
+    background: $button-dark-background;
+    color:      $button-dark-color;
+    &:hover {
+      background:   $btn-dark-hover-background;
+      color:        $button-dark-color;
+      border-color: $color-1;
+    }
+  }
+  &.light {
+    background: $button-light-background;
+    border:     $button-border-color;
+    color:      $button-light-color;
+    &:hover {
+      color:        $button-color-hover;
+      border-color: $btn-light-hover-border-color;
+    }
+  }
+}

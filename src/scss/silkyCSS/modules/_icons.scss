@@ -1,0 +1,157 @@
+// ./silkyCSS/modules/_icons.scss
+
+// ------------------------------------------------
+// MODULE VARIABLES
+// ------------------------------------------------
+
+// ||| ICONS VARIABLES ||||||||||
+$icon-width:   1.7rem;
+$icon-height:  1.7rem;
+$icon-display: inline;
+$icon-margin:  0 0.7rem;
+$icon-align:   center;
+
+$icon-colors: $color-1;
+// ICONS CIRCLE
+$icon-circle-border:        2px solid #e7e7e7;
+$icon-circle-border-radius: 50%;
+$icon-circle-padding:       3px;
+$icon-circle-background:    #fff;
+$icon-circle-align:         center;
+// HOVER
+$icon-hover-border: $color-1;
+
+// FOOTER ICONS
+$footer-icons-color:      $color-3;
+$footer-icons-background: #f2f2f2;
+// HOVER
+$footer-icons-hover-transitions: 200ms ease-in-out;
+$footer-icons-hover-border:      $icon-hover-border;
+$footer-icons-hover-color:       $color-1;
+
+// ------------------------------------------------
+// MODULE SPECIFICATIONS
+// ------------------------------------------------
+// ICONS
+.icon {
+  display: $icon-display;
+  &.fa-twitter {
+    width:      $icon-width;
+    height:     $icon-height;
+    margin:     $icon-margin;
+    text-align: $icon-align;
+    &.circle-icon {
+      border-radius:    $icon-circle-border-radius;
+      background-color: $icon-circle-background;
+      border:           $icon-circle-border;
+      padding:          $icon-circle-padding;
+      &:hover {
+        border-color: $icon-hover-border;
+      }
+      // FOOTER ICONS
+      &.icon-footer {
+        color:      $footer-icons-color;
+        background: $footer-icons-background;
+        &:hover {
+          transition:   $footer-icons-hover-transitions;
+          border-color: $footer-icons-hover-border;
+          color:        $footer-icons-hover-color;
+        }
+      }
+    }
+  }
+  &.fa-facebook-f {
+    width:      $icon-width;
+    height:     $icon-height;
+    margin:     $icon-margin;
+    text-align: $icon-align;
+    &.circle-icon {
+      text-align:       $icon-circle-align;
+      border-radius:    $icon-circle-border-radius;
+      background-color: $icon-circle-background;
+      border:           $icon-circle-border;
+      padding:          $icon-circle-padding;
+      &:hover {
+        border-color: $icon-hover-border;
+      }
+      // FOOTER ICONS
+      &.icon-footer {
+        color:      $footer-icons-color;
+        background: $footer-icons-background;
+        &:hover {
+          transition:   $footer-icons-hover-transitions;
+          border-color: $footer-icons-hover-border;
+          color:        $footer-icons-hover-color;
+        }
+      }
+    }
+  }
+  &.fa-instagram {
+    width:      $icon-width;
+    height:     $icon-height;
+    margin:     $icon-margin;
+    text-align: $icon-align;
+    &.circle-icon {
+      text-align:       $icon-circle-align;
+      border-radius:    $icon-circle-border-radius;
+      background-color: $icon-circle-background;
+      border:           $icon-circle-border;
+      padding:          $icon-circle-padding;
+      &:hover {
+        border-color: $icon-hover-border;
+      }
+      // FOOTER ICONS
+      &.icon-footer {
+        color:      $footer-icons-color;
+        background: $footer-icons-background;
+        &:hover {
+          transition:   $footer-icons-hover-transitions;
+          border-color: $footer-icons-hover-border;
+          color:        $footer-icons-hover-color;
+        }
+      }
+    }
+  }
+  &.fa-dribbble {
+    width:      $icon-width;
+    height:     $icon-height;
+    margin:     $icon-margin;
+    text-align: $icon-align;
+    &.circle-icon {
+      text-align:       $icon-circle-align;
+      border-radius:    $icon-circle-border-radius;
+      background-color: $icon-circle-background;
+      border:           $icon-circle-border;
+      padding:          $icon-circle-padding;
+      &:hover {
+        border-color: $icon-hover-border;
+      }
+    }
+  }
+  &.fa-github {
+    width:      $icon-width;
+    height:     $icon-height;
+    margin:     $icon-margin;
+    text-align: $icon-align;
+    &.circle-icon {
+      text-align:       $icon-circle-align;
+      border-radius:    $icon-circle-border-radius;
+      background-color: $icon-circle-background;
+      border:           $icon-circle-border;
+      padding:          $icon-circle-padding;
+      &:hover {
+        border-color: $icon-hover-border;
+      }
+      // FOOTER ICONS
+      &.icon-footer {
+        color:      $footer-icons-color;
+        background: $footer-icons-background;
+        &:hover {
+          transition:   $footer-icons-hover-transitions;
+          border-color: $footer-icons-hover-border;
+          color:        $footer-icons-hover-color;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guide de style : INTENSIV</title>
+  <link rel="stylesheet" href="./scss/app.scss" />
+  <link rel="stylesheet" href="./lib/fontawesome-free-5.15.3-web/css/all.min.css" />
+</head>
+
+<body>
+  <header class="main-header text-center">
+    <a href="./index.html" class="logo-intensiv">INTENSIV'</a>
+    <!-- MENU SLIDER -->
+    <nav class="container  menu-slider">
+      <a href="#" class="menu-slider-btn"><i class="fas fa-bars"></i>MENU</a>
+      <ul class="menu-slider-menu">
+        <li class="menu-slider-cross"><i class="fas fa-times"></i></li>
+        <li><a href="./index.html">THIS IS INTENSIV'</a></li>
+        <li><a href="./generic.html">GENERIC PAGE</a></li>
+        <li><a href="./element.html">ELEMENTS REFERENCE</a></li>
+        <li>
+          <ul class="list-icons">
+            <li><a href="#"><i class="icon fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="icon fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="icon fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="icon fab fa-github"></i></a></li>
+          </ul>  
+        </li>
+      </ul>
+    </nav>
+     <!-- MENU HORIZONTAL -->
+    <nav class="container  menu-horizontal">
+      <a href="#" class="menu-slider-btn"><i class="fas fa-bars"></i>MENU</a>
+      <ul class="menu-slider-menu">
+        <li class="menu-slider-cross"><i class="fas fa-times"></i></li>
+        <li><a href="./index.html">THIS IS INTENSIV'</a></li>
+        <li><a href="./generic.html">GENERIC PAGE</a></li>
+        <li><a href="./element.html"  class="active">ELEMENTS REFERENCE</a></li>
+      </ul>
+        <ul class="list-icons">
+          <li><a href="#"><i class="icon fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="icon fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="icon fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="icon fab fa-github"></i></a></li>
+        </ul>  
+    </nav>
+  </header>
+
+  <div class="container backgroundLight">
+    <main class="main-content">
+      <h1 class="text-center">ELEMENTS REFERENCE</h1>
+      <!-- |||||||||||||| COLORS ||||||||||||||-->
+      <section>
+        <h2>COLORS</h2>
+        <div class="color-block color-1"></div>
+        <div class="color-block color-2"></div>
+        <div class="color-block color-3"></div>
+        <div class="color-block color-4"></div>
+        <div class="color-block color-5"></div>
+      </section>
+      <hr />
+
+      <!-- |||||||||||||| TEXT ||||||||||||||-->
+      <section>
+        <h2>TEXT</h2>
+        <p>
+          This is <b>bold</b> and this is <strong>strong</strong>. This is
+          <i>italic</i> and this is <em>emphasized</em>. This is
+          <sup>superscript</sup> text and this <sub>suberscript</sub> text.
+          This is <u>underlined</u> and this is <code>for(;;) {...}</code>.
+          Finally, this a <a href="#">link</a>.
+        </p>
+      </section>
+      <hr />
+
+      <!-- |||||||||||||| HEADERS ||||||||||||||-->
+      <section>
+        <h2>HEADERS</h2>
+        <h2 class="h1">HEADING LEVEL 1</h2>
+        <h2>HEADING LEVEL 2</h2>
+        <h3>HEADING LEVEL 3</h3>
+        <h4>HEADING LEVEL 4</h4>
+        <h5>HEADING LEVEL 5</h5>
+        <h6>HEADING LEVEL 6</h6>
+      </section>
+      <hr />
+
+      <!-- |||||||||||||| HEADING WITH SUBTITLE ||||||||||||||-->
+      <section>
+        <h2>HEADING WITH SUBTITLE</h2>
+        <p class="subtitle-italic-1">
+          Lorem ipsum dolor sit amet nullam id egestas urna aliquam
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae hic
+          obcaecati voluptates minus dignissimos. Quibusdam facilis
+          necessitatibus voluptates assumenda possimus, consequuntur aliquid
+          repudiandae? Ratione esse, suscipit minima ad vero atque!
+        </p>
+      </section>
+      <section>
+        <h3>HEADING WITH SUBTITLE</h3>
+        <p class="subtitle-italic-2">
+          Lorem ipsum dolor sit amet nullam id egestas urna aliquam
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae hic
+          obcaecati voluptates minus dignissimos. Quibusdam facilis
+          necessitatibus voluptates assumenda possimus, consequuntur aliquid
+          repudiandae? Ratione esse, suscipit minima ad vero atque!
+        </p>
+      </section>
+      <section>
+        <h4>HEADING WITH SUBTITLE</h4>
+        <p class="subtitle-italic-3">
+          Lorem ipsum dolor sit amet nullam id egestas urna aliquam
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae hic
+          obcaecati voluptates minus dignissimos. Quibusdam facilis
+          necessitatibus voluptates assumenda possimus, consequuntur aliquid
+          repudiandae? Ratione esse, suscipit minima ad vero atque!
+        </p>
+      </section>
+      <hr />
+
+      <!-- |||||||||||||| LIST ||||||||||||||-->
+      <section class="grid">
+        <h2>LISTS</h2>
+        <div class="col-md-6">
+          <h3>UNORDERED - UL</h3>
+          <ul>
+            <li>Dolor pulvinar etiam.</li>
+            <li>Sagittis lorem eleifend.</li>
+            <li>Félis feugiat dolore viverra.</li>
+            <li>Dolor pulvinar etiam.</li>
+          </ul>
+          <h3>ORDERED</h3>
+          <ol>
+            <li>Dolor pulvinar etiam.</li>
+            <li>Sagittis lorem eleifend.</li>
+            <li>Félis feugiat dolore viverra.</li>
+            <li>Dolor pulvinar etiam.</li>
+            <li>Lorem ipsum dolor sit.</li>
+          </ol>
+        </div>
+
+        <div class="col-md-6">
+          <h3>ALTERNATE - UL.ALTERNATE</h3>
+          <ul class="list list-alternate">
+            <li>Dolor pulvinar etiam etiam.</li>
+            <li>Sagittis adipiscing eleifend.</li>
+            <li>Félis enim dolore viverra.</li>
+            <li>Dolor pulvinar etiam etiam.</li>
+          </ul>
+          <!-- |||||||||||||| ICONS ||||||||||||||-->
+          <h3>ICONS</h3>
+          <ul>
+            <li class="icon">
+              <a href="#"><i class="icon fab fa-twitter"></i></a>
+            </li>
+            <li class="icon">
+              <a href="#"><i class="icon fab fa-facebook-f"></i></a>
+            </li>
+            <li class="icon">
+              <a href="#"><i class="icon fab fa-instagram"></i></a>
+            </li>
+            <li class="icon">
+              <a href="#"><i class="icon fab fa-github"></i></a>
+            </li>
+            <li class="icon">
+              <a href="#"><i class="icon fab fa-dribbble"></i></a>
+            </li>
+          </ul>
+          <ul>
+            <li class="icon">
+              <a href="#"><i class="icon fab fa-twitter circle-icon"></i></a>
+            </li>
+            <li class="icon">
+              <a href="#"><i class="icon fab fa-facebook-f circle-icon"></i></a>
+            </li>
+            <li class="icon">
+              <a href="#"><i class="icon fab fa-instagram circle-icon"></i></a>
+            </li>
+            <li class="icon">
+              <a href="#"><i class="icon fab fa-github circle-icon"></i></a>
+            </li>
+            <li class="icon">
+              <a href="#"><i class="icon fab fa-dribbble circle-icon"></i></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- |||||||||||||| DEFINITION ||||||||||||||-->
+      <section>
+        <h3>DEFINITION</h3>
+        <dl>
+          <dt>Item 1</dt>
+          <dd>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+              reprehenderit corporis provident? Quae officia veritatis
+              quibusdam autem, excepturi ipsum nihil quis alias nostrum, nulla
+              est odio. Facere perferendis voluptate quasi?
+            </p>
+          </dd>
+        </dl>
+        <dl>
+          <dt>Item 2</dt>
+          <dd>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+              reprehenderit corporis provident? Quae officia veritatis
+              quibusdam autem, excepturi ipsum nihil quis alias nostrum, nulla
+              est odio. Facere perferendis voluptate quasi?
+            </p>
+          </dd>
+        </dl>
+        <dl>
+          <dt>Item 3</dt>
+          <dd>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+              reprehenderit corporis provident? Quae officia veritatis
+              quibusdam autem, excepturi ipsum nihil quis alias nostrum, nulla
+              est odio. Facere perferendis voluptate quasi?
+            </p>
+          </dd>
+        </dl>
+      </section>
+      <hr />
+
+      <!-- |||||||||||||| BLOCKQUOTE ||||||||||||||-->
+      <section>
+        <h2>BLOCKQUOTE</h2>
+        <blockquote>
+          Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu
+          arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac
+          arcu sit amet, fermentum pellentesque et purus. Integer maximus
+          varius lorem, sed convallis diam accumsan sed. Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Possimus dolorum, fuga dolorem
+          illo fugiat provident perspiciatis ea. Ratione, sequi!
+        </blockquote>
+      </section>
+      <hr />
+
+      <!-- |||||||||||||| TABLE ||||||||||||||-->
+      <section>
+        <h2>TABLE</h2>
+        <h3>DEFAULT</h3>
+        <table>
+          <thead>
+            <tr class="text-left">
+              <th>Name</th>
+              <th>Description</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody class="table table-alternate">
+            <tr>
+              <td>Item 1</td>
+              <td>Ante turpis integer aliquet porttitor.</td>
+              <td>29.99</td>
+            </tr>
+            <tr>
+              <td>Item 2</td>
+              <td>Lorem ipsum dolor sit amet.</td>
+              <td>19.99</td>
+            </tr>
+            <tr>
+              <td>Item 3</td>
+              <td>Ante turpis integer aliquet porttitor.</td>
+              <td>29.99</td>
+            </tr>
+            <tr>
+              <td>Item 4</td>
+              <td>Ante turpis integer aliquet porttitor.</td>
+              <td>19.99</td>
+            </tr>
+            <tr>
+              <td>Item 5</td>
+              <td>Ante turpis integer aliquet porttitor.</td>
+              <td>29.99</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>100.00</td>
+            </tr>
+          </tfoot>
+        </table>
+        <h3>ALTERNATE</h3>
+        <table>
+          <thead>
+            <tr class="text-left">
+              <th>Name</th>
+              <th>Description</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody class="table table-alternate">
+            <tr>
+              <td>Item 1</td>
+              <td>Ante turpis integer aliquet porttitor.</td>
+              <td>29.99</td>
+            </tr>
+            <tr>
+              <td>Item 2</td>
+              <td>Lorem ipsum dolor sit amet.</td>
+              <td>19.99</td>
+            </tr>
+            <tr>
+              <td>Item 3</td>
+              <td>Ante turpis integer aliquet porttitor.</td>
+              <td>29.99</td>
+            </tr>
+            <tr>
+              <td>Item 4</td>
+              <td>Ante turpis integer aliquet porttitor.</td>
+              <td>19.99</td>
+            </tr>
+            <tr>
+              <td>Item 5</td>
+              <td>Ante turpis integer aliquet porttitor.</td>
+              <td>29.99</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>100.00</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+      <hr />
+
+      <!-- |||||||||||||| BUTTONS ||||||||||||||-->
+      <section>
+        <h2>BUTTONS</h2>
+        <div class="grid">
+          <div>
+            <button class="button-primary dark">PRIMARY</button>
+            <button class="button-default light">DEFAULT</button>
+          </div>
+
+          <div>
+            <button class="button-large dark">LARGE</button>
+            <button class="button-default light">DEFAULT</button>
+            <button class="button-small light">SMALL</button>
+          </div>
+
+          <div class="col-6">
+            <button class="button-fit dark">FIT</button>
+          </div>
+          <div class="col-6">
+            <button class="button-fit light">FIT</button>
+          </div>
+
+          <div class="col-6">
+            <button class="button-fitsmall dark">FIT + SMALL</button>
+          </div>
+          <div class="col-6">
+            <button class="button-fitsmall light">FIT + SMALL</button>
+          </div>
+
+          <div>
+            <button class="button-icon dark">
+              <i class="fas fa-search"></i>ICON
+            </button>
+            <button class="button-icon light">
+              <i class="fas fa-download"></i>ICON
+            </button>
+          </div>
+
+          <div>
+            <button class="button-primary dark" disabled>PRIMARY</button>
+            <button class="button-default light" disabled>DEFAULT</button>
+          </div>
+        </div>
+      </section>
+      <hr />
+
+      <!-- |||||||||||||| FORM ||||||||||||||-->
+      <section>
+        <h2>FORM</h2>
+        <form action="#" method="GET" class="grid">
+          <!-- INPUT BASIC -->
+          <div class="col-6">
+            <input type="text" name="nom" placeholder="Name" class="form-input-basic" />
+          </div>
+          <div class="col-6">
+            <input type="email" name="email" placeholder="Email" class="form-input-basic" />
+          </div>
+          <!-- INPUT LISTE DEROULANTE -->
+          <select name="category">
+            <option disabled="disabled" selected="selected">
+              - Category -
+            </option>
+            <option value="c1">Category 1</option>
+            <option value="c2">Category 2</option>
+            <option value="c3">Category 3</option>
+            <option value="c4">Category 4</option>
+          </select>
+          <!-- INPUT RADIO -->
+          <div class="col-sm-12 col-md-4">
+            <input type="radio" name="choix" value="l" id="radioId" class="form-input-radio" />
+            Low
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <input type="radio" name="choix" value="n" checked="checked" class="form-input-radio" />
+            Normal
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <input type="radio" name="choix" value="h" class="form-input-radio" />
+            High
+          </div>
+          <!-- INPUT BASIC -->
+          <div class="col-sm-12 col-md-6">
+            <input type="checkbox" name="verif1" id="1" value="1" class="form-input-checkbox" />
+            Email me a copy
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <input type="checkbox" name="verif2" id="2" value="2" class="form-input-checkbox" />
+            Im a human
+          </div>
+
+          <!-- INPUT TEXTAREA -->
+          <textarea name="comment" cols="30" rows="15" placeholder="Enter your message"
+            class="form-space-comment"></textarea>
+
+          <div>
+            <input type="submit" value="SEND MESSAGE" class="button button-submit" />
+            <input type="reset" value="RESET" class="button button-default light" />
+          </div>
+        </form>
+      </section>
+      <hr />
+
+      <!-- |||||||||||||| IMAGE ||||||||||||||-->
+      <section>
+        <h2>IMAGE</h2>
+        <h3>FIT</h3>
+        <img src="assets/images/img1.jpg" alt="image galerie" class="image-principal" />
+        <div class="grid catalogue-image none">
+          <div class="col-4">
+            <img src="assets/images/img3.jpg" alt="image galerie" class="galerie-img" />
+          </div>
+          <div class="col-4">
+            <img src="assets/images/img2.jpg" alt="image galerie" class="galerie-img" />
+          </div>
+          <div class="col-4">
+            <img src="assets/images/img3.jpg" alt="image galerie" class="galerie-img" />
+          </div>
+          <div class="col-4">
+            <img src="assets/images/img3.jpg" alt="image galerie" class="galerie-img" />
+          </div>
+          <div class="col-4">
+            <img src="assets/images/img3.jpg" alt="image galerie" class="galerie-img" />
+          </div>
+          <div class="col-4">
+            <img src="assets/images/img2.jpg" alt="image galerie" class="galerie-img" />
+          </div>
+          <div class="col-4">
+            <img src="assets/images/img2.jpg" alt="image galerie" class="galerie-img" />
+          </div>
+          <div class="col-4">
+            <img src="assets/images/img3.jpg" alt="image galerie" class="galerie-img" />
+          </div>
+          <div class="col-4">
+            <img src="assets/images/img3.jpg" alt="image galerie" class="galerie-img" />
+          </div>
+        </div>
+        <h3>LEFT & RIGHT</h3>
+        <p class="text-floating">
+          <span class="float-left">
+            <img src="assets/images/img3.jpg" alt="image" />
+          </span>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+          aliquam commodi animi? Sunt, natus distinctio. Delectus voluptatibus
+          corporis, unde assumenda officia maxime earum nihil? Vero
+          repellendus accusantium nobis dolore. Facere quas rem hic dolores
+          aspernatur? Natus? Odit corporis earum repudiandae eos fugiat
+          suscipit placeat modi incidunt unde officia! Obcaecati in magnam at
+          accusamus cumque odit officiis velit quos nisi dignissimos! Nobis
+          quae dolor ullam minima, fugit voluptate reprehenderit laudantium
+          est autem. Dolore. Quis, alias. Cupiditate assumenda itaque
+          blanditiis illo similique ipsa eum sapiente reiciendis. Officiis eum
+          labore alias non voluptas sit molestiae eveniet repudiandae iusto
+          cupiditate? Iste alias nostrum quia accusamus laborum iusto minus
+          omnis ad earum illum. Unde eaque saepe natus quo cumque culpa
+          exercitationem odio suscipit porro sit!
+        </p>
+
+        <p class="text-floating">
+          <span class="float-right">
+            <img src="assets/images/img2.jpg" alt="image" />
+          </span>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+          aliquam commodi animi? Sunt, natus distinctio. Delectus voluptatibus
+          corporis, unde assumenda officia maxime earum nihil? Vero
+          repellendus accusantium nobis dolore. Facere quas rem hic dolores
+          aspernatur? Natus? Odit corporis earum repudiandae eos fugiat
+          suscipit placeat modi incidunt unde officia! Obcaecati in magnam at
+          accusamus cumque odit officiis velit quos nisi dignissimos! Nobis
+          quae dolor ullam minima, fugit voluptate reprehenderit laudantium
+          est autem. Dolore. Quis, alias. Cupiditate assumenda itaque
+          blanditiis illo similique ipsa eum sapiente reiciendis. Officiis eum
+          labore alias non voluptas sit molestiae eveniet repudiandae iusto
+          cupiditate? Iste alias nostrum quia accusamus laborum iusto minus
+          omnis ad earum illum. Unde eaque saepe natus quo cumque culpa
+          exercitationem odio suscipit porro sit!
+        </p>
+      </section>
+      <hr />
+
+      <!-- |||||||||||||| BOX ||||||||||||||-->
+      <section>
+        <h2>BOX</h2>
+        <div class="box">
+          <p>
+            Felis sagittis eget tempus primis in faucibus vestibulum. Blandit
+            adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu
+            faucibus. Integer ac pellentesque praesent tincidunt felis
+            sagittis eget. tempus euismod. Magna sed etiam ante ipsum primis
+            in faucibus vestibulum. Blandit adipiscing eu ipsum primis in
+            faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat
+            ac adipiscing accumsan eu faucibus lorem ipsum dolor sit amet
+            nullam. Integer ac pellentesque praesent tincidunt felis sagittis
+            eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget.
+            tempus euismod. Vestibulum ante ipsum primis in faucibus
+            vestibulum. Blandit adipiscing eu felis iaculis volutpat ac
+            adipiscing accumsan eu faucibus. Integer ac pellentesque praesent
+            tincidunt felis sagittis eget. tempus euismod. Vestibulum ante
+            ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis
+            iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac
+            pellentesque praesent. Vestibulum ante ipsum primis in faucibus
+            magna blandit
+          </p>
+        </div>
+      </section>
+      <hr />
+
+      <!-- |||||||||||||| PREFORMATTED ||||||||||||||-->
+      <section>
+        <h2>PREFORMATTED</h2>
+        <pre>
+          <code>
+            i = 0;
+            while (!deck.isInOrder()) {
+                print 'Iteration' + i;
+                deck.shuffle();
+                i++;
+            }
+            print 'It took' + i + 'Iterations to sort the deck';
+          </code>
+        </pre>
+      </section>
+    </main>
+  </div>
+
+  <!-- |||||||||||||| FOOTER FORMULAIRE  ||||||||||||||-->
+  <footer class="container grid footer">
+    <div class="container-left col-sm-12 col-md-6">
+      <form class="form footer-form" method="GET">
+        <label for="name">NAME</label>
+        <input type="text" name="name" id="name" class="form input-footer" />
+        <label for="email">EMAIL</label>
+        <input type="email" name="email" id="email" class="form input-footer" />
+        <label for="msg">MESSAGE</label>
+        <textarea class="form input-msg" name="msg" id="msg"></textarea>
+        <input type="submit" value="SEND MESSAGE" class="button button-submit light" />
+      </form>
+    </div>
+
+    <!-- |||||||||||||| FOOTER INFORMATION SUPPLEMENTAIRE ||||||||||||||-->
+
+    <div class="container-right col-sm-12 col-md-6">
+      <section class="footer">
+        <h3 class="footer footer-title">ADDRESS</h3>
+        <address class="footer footer-content">
+          9 rue Charles Deliège 4247<br />Fléron, TN 00-000-00
+        </address>
+      </section>
+
+      <section class="footer">
+        <h3 class="footer footer-title">PHONE</h3>
+        <p class="footer footer-content link">(000) 000 - 000</p>
+      </section>
+
+      <section class="footer">
+        <h3 class="footer footer-title">EMAIL</h3>
+        <p class="footer footer-content link">info@untitled.tld</p>
+      </section>
+
+      <section class="footer">
+        <h3 class="footer footer-title">SOCIAL</h3>
+        <ul class="container-icones">
+          <li class="icon">
+            <a href="#"><i class="icon fab fa-twitter circle-icon icon-footer"></i></a>
+          </li>
+          <li class="icon">
+            <a href="#"><i class="icon fab fa-facebook-f circle-icon icon-footer"></i></a>
+          </li>
+          <li class="icon">
+            <a href="#"><i class="icon fab fa-instagram circle-icon icon-footer"></i></a>
+          </li>
+          <li class="icon">
+            <a href="#"><i class="icon fab fa-github circle-icon icon-footer"></i></a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </footer>
+
+  <!-- |||||||||||||| DIV footer copyright ||||||||||||||-->
+  <ul id="footer-copyright">
+    <li>&copy; UNTITLED</li>
+    <li>DESIGN: <a href="#" class="link">IEPS</a></li>
+  </ul>
+  <script src="js/app.js">
+  </script>
+</body>
+
+</html>

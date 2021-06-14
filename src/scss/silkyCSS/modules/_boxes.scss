@@ -1,0 +1,60 @@
+
+// ./silkyCSS/modules/_boxes.scss
+
+// ------------------------------------------------
+// MODULE VARIABLES
+// ------------------------------------------------
+
+
+
+// ------------------------------------------------
+// MODULE SPECIFICATIONS
+// ------------------------------------------------ 
+
+// CONTAINER
+      @each $size, $values  in $screen-sizes { //
+          @media screen and (min-width: map-get($values, 'breakpoint')) {
+             .container {
+                 width: 100%;
+                 max-width: map-get($values, 'container-size' ); 
+                 margin: auto;
+                 
+             }
+         }
+      }
+
+// CONTENT ALIGNEMENTS
+      .text-center {
+         text-align: center;
+      }
+      .text-left {
+         text-align: left;
+      }
+      .text-right {
+         text-align: right;
+      }
+      .text-justify {
+         text-align: justify;
+      }
+
+// FLOAT ALIGNEMENT
+      .float-left {
+         float: left;
+         margin: 0 2rem 2rem 0;
+         
+      }
+
+      .float-right {
+         float: right;
+         margin: 0 0 2rem 2rem;
+         
+      }
+
+// DISPLAY
+      .block {
+         display: block;
+      }
+
+      .inline-block {
+         display: inline-block;
+      }
